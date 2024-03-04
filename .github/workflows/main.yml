@@ -1,10 +1,5 @@
-  - name: 'Upload Artifact'
-  on:
-    pull_request:
-      branches:
-          - main
-    uses: actions/upload-artifact@v4
-    with:
-      name: my-artifact
-      path: src/main/newFile.txt
-      retention-days: 5
+- uses: actions/upload-artifact@v4
+  with:
+    name: my-artifact
+    path: src/main/newFile.txt
+    retention-days: 5
